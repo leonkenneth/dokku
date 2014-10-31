@@ -14,7 +14,7 @@ ifeq (vagrant-dokku,$(firstword $(MAKECMDGOALS)))
   $(eval $(RUN_ARGS):;@:)
 endif
 
-.PHONY: all install copyfiles version plugins dependencies sshcommand pluginhook docker aufs stack count vagrant-acl-add vagrant-dokku
+.PHONY: all install copyfiles version plugins dependencies sshcommand pluginhook docker stack count vagrant-acl-add vagrant-dokku
 
 all:
 	# Type "make install" to install.
