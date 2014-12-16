@@ -5,7 +5,8 @@
 
 set -eo pipefail
 export DEBIAN_FRONTEND=noninteractive
-export DOKKU_REPO=${DOKKU_REPO:-"https://github.com/progrium/dokku.git"}
+export DOKKU_REPO=${DOKKU_REPO:-"https://github.com/leonkenneth/dokku.git"}
+export DOKKU_BRANCH=${DOKKU_BRANCH:-"master"}
 
 if ! command -v apt-get &>/dev/null
 then
